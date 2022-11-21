@@ -16,6 +16,8 @@ p1But.addEventListener('click', function () {
         if (p1Score === winningScore) {
             p1Display.style.color="green";
             p2Display.style.color="red";
+            p1But.style.opacity="0.5"
+            p2But.style.opacity="0.5"
             isGameOver = true;
         }
         p1Display.textContent = p1Score;
@@ -30,6 +32,8 @@ p2But.addEventListener('click', function () {
         if (p2Score === winningScore) {
             p1Display.style.color="red";
             p2Display.style.color="green";
+            p1But.style.opacity="0.5"
+            p2But.style.opacity="0.5"
             isGameOver = true;
         }
         p2Display.textContent = p2Score;
@@ -53,5 +57,6 @@ function reset(){
     p1Score = 0;
     p2Score = 0;
     isGameOver = false;
-    
+    p1But.style.opacity="1"
+    p2But.style.opacity="1"
 }
