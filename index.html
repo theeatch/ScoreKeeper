@@ -1,51 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
-    
+
     <title>Document</title>
-</head>
+  </head>
 
-<body class="lg:bg-slate-400">
-    <section class="flex m-auto items-center justify-center flex-col border-4 rounded-lg w-screen h-screen  lg:w-96 lg:h-full">
-        <img src="https://media.istockphoto.com/vectors/ping-pong-red-and-blue-racket-splash-with-ball-stars-vector-id472295613?b=1&k=20&m=472295613&s=170667a&w=0&h=dF7V6pbRNlK7AuHt5blztdGYGcBfI1pZIM0VEMy7kIc="
-            class="w-full h-full bg-red-300">
-        <div class="p-3 w-full mr-auto font-bold border bg-[#FFE8F7]">Ping Pong Score Keeper</div>
+  <body class="lg:bg-slate-400">
+    <section
+      class="flex m-auto items-center justify-center flex-col border-4 rounded-lg h-screen w-screen lg:w-96 lg:h-screen md:w-screen md:h-screen"
+    >
+      <img
+        src="https://media.istockphoto.com/vectors/ping-pong-red-and-blue-racket-splash-with-ball-stars-vector-id472295613?b=1&k=20&m=472295613&s=170667a&w=0&h=dF7V6pbRNlK7AuHt5blztdGYGcBfI1pZIM0VEMy7kIc="
+        class="w-full h-full bg-red-300"
+      />
+      <div class="p-3 w-full mr-auto font-bold border bg-[#FFE8F7]">
+        Ping Pong Score Keeper
+      </div>
 
-        <div class="mx-auto flex flex-col items-center p-3 w-full h-48 bg-[#FFDFCA]">
-            <h1 class="font-bold text-7xl"><span id="p1Display">0</span> to <span id="p2Display">0 </span></h1>
-            <p class=" mt-2 text-[#005A34]">use the buttons to keep score</p>
-            <div class="flex flex-row">
-                <h2 class="font-bold text-2xl p-1 mr-2">Playing To </h2>
-                <select name="" id="playto" class="w-8 h-7 mt-1.5 bg-slate-500 text-white rounded">
-                    <option value="5" >5</option>
-                    <option value="6" >6</option>
-                    <option value="7" >7</option>
-                    <option value="8" >8</option>
-                    <option value="9" >9</option>
-                </select>
-            </div>
+      <div
+        class="mx-auto flex flex-col items-center p-3 w-full h-48 bg-[#FFDFCA]"
+      >
+        <h1 class="font-bold text-7xl">
+          <span id="p1Display">0</span> to <span id="p2Display">0 </span>
+        </h1>
+        <p class="mt-2 text-[#005A34]">use the buttons to keep score</p>
+        <div class="flex flex-row">
+          <h2 class="font-bold text-2xl p-1 mr-2">Playing To</h2>
+          <select
+            name=""
+            id="playto"
+            class="w-8 h-7 mt-1.5 bg-slate-500 text-white rounded"
+          >
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+          </select>
         </div>
-        <div class="border flex flex-row justify-evenly w-full text-center rounded ">
-            <button id="p1Button" class="bg-green-700 text-white  w-full p-2 rounded">
-                +1 Player One
-            </button>
-            <button id="p2Button" class="bg-blue-600 text-white  w-full p-2 rounded">
-                +1 Player Two
-            </button>
-            <button id="resetButton" class="bg-red-700 text-white  w-full p-2 rounded">
-                Reset
-            </button>
-        </div>
+      </div>
+      <div
+        class="border flex flex-row justify-evenly w-full text-center rounded"
+      >
+        <button
+          id="p1Button"
+          class="bg-green-700 text-white w-full p-2 rounded"
+        >
+          +1 Player One
+        </button>
+        <button id="p2Button" class="bg-blue-600 text-white w-full p-2 rounded">
+          +1 Player Two
+        </button>
+        <button
+          id="resetButton"
+          class="bg-red-700 text-white w-full p-2 rounded"
+        >
+          Reset
+        </button>
+      </div>
     </section>
-    
-    
-    
-    <script src="app.js"></script>
-</body>
 
+    <script src="app.js"></script>
+  </body>
 </html>
